@@ -1,0 +1,42 @@
+.info, .act, .tabla{
+    width: 73.475vw;
+    position: relative;
+    text-align: center;
+    height: auto;
+    margin: 0 auto;
+}
+.info h2{
+    font-size: 1.875em;
+    text-align: center;
+    clear: left;
+    margin-top: 25px;
+
+}
+.info p{
+    width: 95%;
+    font-size: 1.125em;
+    margin: auto;
+    border: solid 1px #11add5;
+    padding: 25px;
+    text-align: justify;
+    margin: 10px auto;
+}
+.act{
+    position: relative;
+    margin: 0 auto;
+    text-align: justify;
+    background: #80c6df;
+    padding: 20px 14%;
+    
+}
+.act .imgAuditorio{
+    width: 27.5%;
+    float: right;
+    margin-right: 50px;
+    border-radius: 50px 0 50px 0;
+}
+
+.tabla{
+    position: absolute;
+    top: 650px;
+}
