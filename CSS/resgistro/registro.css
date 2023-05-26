@@ -6,7 +6,7 @@
     background-color: #fff;
     color: rgb(97 97 97);
     box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
-    width: 45vw;
+    width: 30rem;
     background-clip: border-box;
     margin: auto;
 }
@@ -20,17 +20,16 @@
     overflow: hidden;
     color: #fff;
     box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0 0 #0000,rgba(33,150,243,.4);
-    height: 8rem;
+    height: 7rem;
     letter-spacing: 0;
     line-height: 1.375;
-    font-weight: 600;
-    font-size: 1.125rem;
-    font-family: 'Google Sans';
+    font-weight: 700;
+    font-size: 1.175rem;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .inputContainer {
+}
+.inputContainer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -38,15 +37,17 @@
     width: 100%;
     height: 2.75rem;
     position: relative;
-  }
-  .inputs {
-    padding: 1.5rem;
+}
+.inputs {
+    padding: 0.5rem 0;
     gap: 1rem;
     display: flex;
     flex-direction: column;
-  }
+    width: 100%;
+    margin: 0 auto;
+}
   
-  input {
+.input {
     border: 1px solid rgba(128, 128, 128, 0.61);
     outline: 0;
     color: rgb(69 90 100);
@@ -56,7 +57,7 @@
     padding: 0.75rem;
     background-color: transparent;
     border-radius: .375rem;
-    width: 100%;
-    height: 100%;
-  }
+    width: 80%;
+    margin: 0 auto;
+}
   

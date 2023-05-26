@@ -6,9 +6,13 @@
 }
 main{
 	width: 100vw;
-	height: 100vh;
-	
 }
 footer{
-	height: 50px;
+	width: 100vw;
+	position: absolute;
+	background: #119ad5;
+	padding: 1.5%;
+	padding-bottom: 0;
+	font-size: 1.5em;
+	max-height: 100px;
 }

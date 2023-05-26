@@ -14,29 +14,78 @@
 }
 .info p{
     width: 95%;
-    font-size: 1.125em;
+    font-size: 1.25em;
     margin: auto;
-    border: solid 1px #11add5;
     padding: 25px;
     text-align: justify;
     margin: 10px auto;
 }
 .act{
     position: relative;
-    margin: 0 auto;
-    text-align: justify;
-    background: #80c6df;
+    background: rgba(17, 154, 213, 0.3);
     padding: 20px 14%;
     
 }
+.act h2{
+    font-size: 1.875rem;
+    font-weight: bold;
+    padding-bottom: 15px;
+    margin:0 auto;
+    
+}
 .act .imgAuditorio{
-    width: 27.5%;
-    float: right;
-    margin-right: 50px;
+    width: 33%;
+    max-width: 500px;
+    max-height: 375px;
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    display: inline-block;
     border-radius: 50px 0 50px 0;
 }
-
-.tabla{
-    position: absolute;
-    top: 650px;
+ .act ul{
+    
+    width: 90%;
+    font-size: 1.5rem;
+    padding: 5px;
+    text-align: justify;
+    margin: 0 auto;
+ }
+ .act ul .lihijo{
+    font-size: 1.25rem;
+ }
+.tabla h2{
+    font-size: 1.875em;
+    text-align: center;
+    clear: left;
+    margin-top: 25px;    
+}
+.tabla table{
+    width: 100%;
+    margin: 3% auto;
+    border: solid 1px rgba(17, 154, 213, 0.3);
+}
+.tabla thead{
+    background: #119ad5;
+    color: white;
+}
+.tabla th{
+    font-size: 1.5em;
+}
+.tabla td{
+    background:rgba(17, 154, 213, 0.2) ;
+    font-size: 1.25em;
+    padding: 0.5%;
+}
+@media screen  and (max-width: 1440px) {
+	.info h2, .act h2, .tabla h2 {
+		font-size: 1.625em;
+	}
+    .act ul, .tabla th{
+        font-size: 1.25em;
+    }
+    .act ul .lihijo, .tabla td, .info p{
+        font-size: 1.125rem;
+    }
+        
 }

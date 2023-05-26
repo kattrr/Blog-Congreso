@@ -1,0 +1,13 @@
+.linkContainer{
+    display: flex;
+    width: 73.4375vw;
+    position: relative;
+    margin: 0 auto;
+    flex-direction: column;
+    
+}
+.linkContainer a{
+    color: white;
+    margin: auto;
+    padding-bottom: 1%;
+}

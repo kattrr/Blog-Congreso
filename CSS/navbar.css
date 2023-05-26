@@ -1,5 +1,5 @@
 header {
-	background-color: #11add5;
+	background-color: #119ad5;
 	color: #fff;
 	padding: 20px 0;
 }
@@ -26,33 +26,22 @@ nav {
 
 nav li {
 	display: inline;
-	margin: 0 0 0 20px;
+	margin: 0 0 0 10px;
 	
 }
 nav a {
 	text-transform: uppercase;
 	color: #fff;
 	font-weight:500;
-	font-size: 1.125em;
+	font-size: 1.5em;
 	text-decoration: none;
 }
-@media screen  and (max-width: 1280px) {
-	h1 {
-		display: inline;
+@media screen  and (max-width: 1440px) {
+	h1{
 		font-size: 1.75em;
-		font-weight: bold;
+	}
 	
-	}
-	nav li {
-		display: inline;
-		margin: 0 0 0 10px;
-		
-	}
 	nav a {
-		text-transform: uppercase;
-		color: #fff;
-		font-weight:600;
-		font-size: 1em;
-		text-decoration: none;
+		font-size: 1.25em;
 	}
 } 
