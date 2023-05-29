@@ -1,0 +1,53 @@
+.card{
+    background-color: transparent;
+    width: 50vw;
+    height: 35vh;
+    perspective: 1000px;
+    padding: 1%;
+    
+    display: inline-block;
+}
+.cardDentro {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+}
+
+.card:hover .cardDentro {
+    transform: rotateY(180deg);
+}
+
+.cardFront, .cardBack{
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid #119ad5;
+    border-radius: 1rem;
+    
+}
+.cardFront {
+    background: linear-gradient(120deg, rgb(196, 236, 255) 60%, rgb(222, 240, 255) 88%,
+       rgb(195, 216, 255) 40%, rgba(80, 150, 255, 0.603) 48%);
+    color: #119ad5
+    
+}
+.cardBack p{
+    margin: 1em;
+    font-size: 1.25rem;
+}
+.cardBack{
+    background: linear-gradient(120deg, rgb(145, 193, 255) 30%, rgb(80, 141, 255) 88%,
+    rgb(196, 238, 255) 40%, rgb(160, 204, 255) 78%);
+    color: white;
+    transform: rotateY(180deg);
+  }

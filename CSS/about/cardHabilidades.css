@@ -1,0 +1,59 @@
+.habilidades{
+    width: 73.4375vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2.125em;
+}
+.habilidades h2{
+    font-size: 1.875em;
+    padding: 1em;
+    color: #119ad5;
+}
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+}
+.cardContainer .diseno{
+    background-color: #f43f5e;
+}
+.cardContainer .front{
+    background-color: #3b82f6;
+}
+.cardContainer .back{
+    background-color: #22c55e;
+}
+.cardContainer .leng{
+    background-color: coral;
+}
+.cardContainer .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 12%;
+    min-height: 130px;
+    width: 21%;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+.cardContainer .card h3{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.cardContainer .card ul{
+    font-size: 1.25em;
+    text-align: left;
+}
+.cardContainer .card:hover {
+    transform: scale(1.1, 1.1);
+}
+.cardContainer:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}

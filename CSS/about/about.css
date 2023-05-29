@@ -1,0 +1,14 @@
+.intro{
+    width: 73.4375vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2.125em 0;
+    gap: 5em;
+}
+.intro img{
+    display: inline-block;
+    width: 30%;
+}

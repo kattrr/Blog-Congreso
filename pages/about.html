@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="../CSS/about/cardHabilidades.css">
+    <link rel="stylesheet" href="../CSS/about/about.css">
+    <link rel="stylesheet" href="../CSS/about/card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../CSS/navbar.css">
-    
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/styles.css">
 
@@ -20,49 +23,79 @@
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./registro.html">Registrarse</a></li>
-                <li><a href="./about.html">Contacto</a></li>
+                <li><a href="./about.html">Sobre mí</a></li>
             </ul>
           </nav>
         </div>
     </header>
     <main>
-        <section>
-            <h1>Nombre: Kathering Rivera R</h1>
-            <h2>Información de contacto</h2>
-            <ul>
-                <li>Correo electrónico: katherine@example.com</li>
-                <li>Redes sociales:
-                <ul>
-                    <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                    <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                </ul>
-                </li>
-            </ul>
+        <section class="intro">
+            <div class="card">
+                <div class="cardDentro">
+                    <div class="cardFront">
+                        <h1>Kathering Rivera R</h1>
+                        <h3>Aspirante a Desarrollador front-end / Diseñador UX</h3>
+                    </div>
+                    <div class="cardBack">
+                        <p>Soy estudiante de Ingenieria de Sistemas Certificada en Diseño UX por Google en Coursera, 
+                            me gusta diseñar visualmente aplicaciones moviles y de escritorio y transformar sus elementos 
+                            visuales en elementos funcionales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="../IMG/The Little Things - Working.png" alt="persona sentada en un escritorio trabajando">
         </section>
             
-        <section>
-            <h2>Biografía</h2>
-            <p>Aquí puedes escribir una breve biografía sobre ti.</p>
-        </section>
-            
-        <section>
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Habilidad 1</li>
-                <li>Habilidad 2</li>
-                <li>Habilidad 3</li>
-                <li>Habilidad 4</li>
-                <li>Habilidad 5</li>
-            </ul>
+        <section class="habilidades">
+            <h2>Conocimientos</h2>
+            <div class="cardContainer">
+                <div class="diseno card">
+                    <h3>Diseño UX</h3>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Adobe XD</li>
+                        <li>Wordpress</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="front card">
+                    <h3>Front-end</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                
+                <div class="back card">
+                    <h3>Back-end</h3>
+                    <ul>
+                        <li>Node JS</li>
+                        <li>Docker</li>
+                        <li>Mondo DB</li>
+                        <li>Oracle DB (APEX)</li>
+                    </ul>
+                </div>
+                <div class="leng card">
+                    <h3>Lenguajes de Programación</h3>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         
     </main>
     <footer>
+        <h3>Sigueme en Redes</h3>
         <div class="linkContainer">
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <a href="www.linkedin.com/in/katheringriverar" target="_blank" rel="noopener noreferrer">
             <i class="fa fa-linkedin"></i>
           </a>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/kattrr" target="_blank" rel="noopener noreferrer">
             <i class="fa fa-github"></i>
           </a>
         </div>
