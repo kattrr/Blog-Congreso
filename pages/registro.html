@@ -4,60 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="stylesheet" href="../CSS/navbar.css">
     <link rel="stylesheet" href="../CSS/resgistro/registro.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
 
     <title>Registro Congreso</title>
 </head>
 <body>
-    <header>
-        <div class="menu">
-          <h1>Congreso Estudiantes Ingenieria Informatica UNIR</h1>
-          <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./registro.html">Registrarse</a></li>
-                <li><a href="./about.html">Contacto</a></li>
-            </ul>
-          </nav>
+  <header>
+    <div class="menu">
+      <h1>Congreso Estudiantes Ingenieria Informatica UNIR</h1>
+      <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./registro.html">Registrarse</a></li>
+            <li><a href="./about.html">Sobre mí</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <form class="form">
+      <div class="encabezado">
+        Resgistrar Asistencia al Evento
+      </div>
+      <div class="inputContainer">
+        <div class="inputs">
+          <input type="text" id="nombre" name="nombre" class="input" placeholder="Nombre Completo" required>
         </div>
-    </header>
-    <main>
-        <form class="form">
-          <div class="encabezado">
-            Resgistrar Asistencia al Evento
-          </div>
-          <div class="inputContainer">
-            <div class="inputs">
-              <input type="text" id="nombre" name="nombre" class="input" placeholder="Nombre Completo" required>
-            </div>
-            <div class="inputs">
-              <input type="email" id="correo" name="correo" class="input" placeholder="Correo" required >
-            </div>
-            <div class="inputs">
-              <input type="tel" id="telefono" name="telefono" class="input" placeholder="Teléfono" required>
-            </div>
-            <div class="inputs">
-              <input type="text" id="ocupacion" 
-                      name="ocupacion" class="input"
-                      placeholder="Ocupación" required>
-            </div>
-            <div>
-              <label for="categoria">Categoría de Participación:</label>
-              <select id="categoria" name="categoria" required>
-                <option value="">Seleccione una opción</option>
-                <option value="estudiante">Estudiante</option>
-                <option value="profesor">Profesor</option>
-                <option value="profesional">Profesional</option>
-              </select>
-            </div>
-          </div>
-          <div>
-            <button type="submit">Enviar</button>
-          </div>
-        </form>      
-    </main>
+        <div class="inputs">
+          <input type="email" id="correo" name="correo" class="input" placeholder="Correo" required >
+        </div>
+        <div class="inputs">
+          <input type="tel" id="telefono" name="telefono" class="input" placeholder="Teléfono" required>
+        </div>
+        <div class="inputs">
+          <input type="text" id="ocupacion" 
+                  name="ocupacion" class="input"
+                  placeholder="Ocupación" required>
+        </div>
+        <div class="select">
+          <!--<label for="categoria">Categoría de Participación:</label>-->
+          <select id="categoria" name="categoria" required>
+            <option value="">Categoria de Participación</option>
+            <option value="Competencias">Competencias de Programación</option>
+            <option value="Estuudiante">Estudiante UNIR</option>
+            <option value="presentaciones">Presentaciones de Proyectos</option>
+            <option value="profesional">Expositor y/o encargado de una Actividad</option>
+          </select>
+        </div>
+        <div class="inputs">
+          <button type="submit" class="sigin-btn">Enviar</button>
+        </div>
+      </div>
+      
+    </form>      
+  </main>
+  <footer>
+    <h3>Sigueme en Redes</h3>
+    <div class="linkContainer">
+      <a href="www.linkedin.com/in/katheringriverar" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/kattrr" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-github"></i>
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
