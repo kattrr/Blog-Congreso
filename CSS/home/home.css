@@ -16,7 +16,7 @@
     width: 95%;
     font-size: 1.25em;
     margin: auto;
-    padding: 25px;
+    padding: 1.5em;
     text-align: justify;
     margin: 10px auto;
 }
@@ -29,31 +29,37 @@
 .act h2{
     font-size: 1.875rem;
     font-weight: bold;
-    padding-bottom: 15px;
+    padding-bottom: 1.5em;
+    padding-top: 0.50em;
     margin:0 auto;
     
 }
-.act .imgAuditorio{
-    width: 33%;
-    max-width: 500px;
-    max-height: 375px;
-    position: absolute;
-    right: 20%;
-    top: 20%;
-    display: inline-block;
-    border-radius: 50px 0 50px 0;
-}
- .act ul{
-    
-    width: 90%;
-    font-size: 1.5rem;
-    padding: 5px;
-    text-align: justify;
+.act .actContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
     margin: 0 auto;
- }
- .act ul .lihijo{
+    align-items: center;
+    gap: 3em;
+    justify-content: space-around;
+    padding-bottom: 2em;
+}
+.actContainer .imgAuditorio{
+    max-width: 500px;
+    max-height: 325px;
+    position: relative;
+    border-radius: 50px 0 50px 0;
+    padding: 1em;
+}
+ .actContainer ul{
+    font-size: 1.5rem;
+    padding: 0.350em 1.5em  0;
+    text-align: justify;
+}
+.actContainer ul .lihijo{
     font-size: 1.25rem;
- }
+    padding-bottom: 0.5rem;
+}
 .tabla h2{
     font-size: 1.875em;
     text-align: center;
