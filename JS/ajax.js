@@ -30,7 +30,7 @@ String.prototype.convertir = function() {
     }
 
     // Preparar función de respuesta
-    peticion.onreadystatechange = muestraContenido;
+    peticion.onreadystatechange = mostrarContenido;
 
     // Realizar petición
     tiempoInicial = new Date();
