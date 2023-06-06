@@ -1,0 +1,81 @@
+main{
+ display: flex;
+ flex-direction: row;
+}
+.detectar{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    
+}
+.texto{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-size: 2em;
+    line-height: 100%;
+    color: #3E54AC;
+    border-radius: 0.25em;
+    border: none;
+    padding: 1%;
+    background-color:#ECF2FF ;
+}
+.texto::placeholder{
+    color: #3E54AC;
+}
+.texto:focus, .texto:active{
+    border: none;
+    outline: none;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 0;
+    gap: 24px;
+    width: 100%;
+}
+.btnVerificar{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 90%;
+    background-color: coral;
+    border-radius: 16px;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    border-color: bisque;
+}
+.resultado{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    margin: 1em auto;
+}
+.resultado h2{
+    width: 80%;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    color: #3E54AC;
+    margin-top: 35%;
+}
+.resultado p{
+    width: 75%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}

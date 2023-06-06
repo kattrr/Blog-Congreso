@@ -9,7 +9,7 @@ main{
 }
 footer{
 	width: 100vw;
-	position: relative;
+	position: absolute;
 	background: #119ad5;
 	font-size: 1.5em;
 	bottom: 0;

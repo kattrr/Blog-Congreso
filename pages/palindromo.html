@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/lab/palindromo.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>Detectar palindromo</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1>Ejercicio #1 - Verificar Palindromos</h1>
+            <nav>
+              <ul>
+                  <li><a href="../index.html">Inicio</a></li>
+                  <li><a href="./registro.html">Registrarse</a></li>
+                  <li><a href="./about.html">Sobre mí</a></li>
+                  <li><a href="./lab.html">Laboratorio</a></li>
+              </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="detectar">
+            <textarea class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto Aquí"></textarea>
+            <div class="btn">
+                <button type="button" class="btnVerificar" onclick="palindrome()">Verificar</button>
+            </div>
+        </div>
+        <div class="resultado">
+            <h2 id="tituloRes">Ingresa un Texto para Empezar</h2>
+            <p id="parrafo">Ingresa el texto que deseas verificar si es palindromo o no</p>
+        </div>
+    </main>
+    <footer>
+        <h3>Sigueme en Redes</h3>
+        <div class="linkContainer">
+          <a href="https://www.linkedin.com/in/katheringriverar" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/kattrr" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+    </footer>
+    <script src="../JS/palindromo.js"></script>
+</body>
+</html>

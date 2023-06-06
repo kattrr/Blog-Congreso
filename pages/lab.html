@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/lab/lab.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+          <h1>Laboratorio #1: Tecnologias Javascrip y Ajax</h1>
+          <nav>
+            <ul>
+                <li><a href="../index.html">Congreso</a></li>
+                <li><a href="../pages/registro.html">Registrarse</a></li>
+                <li><a href="../pages/about.html">Sobre mí</a></li>
+                <li><a href="./lab.html">Laboratorio</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <main>
+      <div class="info">
+        <h2>Ejercicios Laboratorio Javascript y Ajax</h2>
+        <p>Presentación de los ejercicios para el curso desarrollo de aplcaciones en Red</p>
+      </div>
+      <section class="js">
+          <h2>Ejercicios Javascript</h2>
+          <ul>
+            <li><a href="./palindromo.html">Detectar Palindromos</a></li>
+            <li><a href="./numMayor.html">Numero Mayor</a></li>
+            <li><a href="./vocales.html">Detectar Vocales y su cantidad</a></li>
+          </ul>
+      </section>
+      <section class="aj">
+          <h2>Ejercicios Ajax</h2>
+          <form action="#">
+              <label for="recurso">URL: </label>
+              <input type="text" id="recurso" />
+            <input type="button" id="enviar" value="Mostrar contenidos" />
+          </form>
+          
+          <div id="principal">
+            
+          
+            <h2>Cabeceras HTTP de la respuesta del servidor:</h2>
+            <div id="cabeceras"></div>
+          </div>
+          
+          <div id="secundario">
+            <h2>Código de estado:</h2>
+            <div id="codigo"></div>
+
+            <h2>Estados de la petición:</h2>
+            <div id="estados"></div>
+
+            <h2>Contenidos del archivo:</h2>
+            <div id="contenidos"></div>
+          </div>
+      </section>
+    </main>
+    <footer>
+        <h3>Sigueme en Redes</h3>
+        <div class="linkContainer">
+          <a href="https://www.linkedin.com/in/katheringriverar" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/kattrr" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+    </footer>
+    <script src="../JS/ajax.js"></script>
+</body>
+</html>

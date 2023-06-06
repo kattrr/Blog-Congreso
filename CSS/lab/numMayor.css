@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.inputContainer{
+    width: 50vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    
+}
+.inputContainer #num1, .inputContainer #num2{
+    width: 70%;
+    padding: 2em;
+    margin: 0.25em;
+    font-size: 1.5em;
+    border-radius: 6px;
+}
+.inputContainer .btnVerificar{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 80%;
+    background-color: coral;
+    border-radius: 16px;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    border-color: bisque;
+    margin: 1em 0;
+}
+.resultado{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    margin: 1em auto;
+}
+.resultado #titulo{
+    width: 95%;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    color: #3E54AC;
+    margin-top: 35%;
+}
+.resultado #parrafo{
+    width: 75%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    margin: 0 auto;
+}
