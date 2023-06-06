@@ -1,4 +1,4 @@
-String.prototype.transformaCaracteresEspeciales = function() {
+String.prototype.convertir = function() {
     return unescape(escape(this).replace(/%0A/g, '<br/>').
                                  replace(/%3C/g, '&lt;').
                                  replace(/%3E/g, '&gt;'));
@@ -13,10 +13,10 @@ String.prototype.transformaCaracteresEspeciales = function() {
     recurso.value = location.href;
 
     // Cargar el recurso solicitado cuando se pulse el botón MOSTRAR CONTENIDOS
-    document.getElementById('enviar').onclick = cargaContenido;
+    document.getElementById('enviar').onclick = cargarContenido;
   }
 
-  function cargaContenido() {
+  function cargarContenido() {
     // Borrar datos anteriores
     document.getElementById('contenidos').innerHTML = "";
     document.getElementById('estados').innerHTML = "";
@@ -40,7 +40,7 @@ String.prototype.transformaCaracteresEspeciales = function() {
   }
 
   // Función de respuesta
-  function muestraContenido() {
+  function mostrarContenido() {
     var tiempoFinal = new Date();
     var milisegundos = tiempoFinal - tiempoInicial;
 
@@ -50,19 +50,19 @@ String.prototype.transformaCaracteresEspeciales = function() {
     if(peticion.readyState == 4) {
       if(peticion.status == 200) {
         var contenidos = document.getElementById('contenidos');
-        contenidos.innerHTML = peticion.responseText.transformaCaracteresEspeciales();
+        contenidos.innerHTML = peticion.responseText.convertir();
       }
-      muestraCabeceras();
-      muestraCodigoEstado();
+      mostrarCabeceras();
+      mostrarCodigoEstado();
     }
   }
 
-  function muestraCabeceras() {
+  function mostrarCabeceras() {
     var cabeceras = document.getElementById('cabeceras');
-    cabeceras.innerHTML = peticion.getAllResponseHeaders().transformaCaracteresEspeciales();
+    cabeceras.innerHTML = peticion.getAllResponseHeaders().convertir();
   }
 
-  function muestraCodigoEstado() {
+  function mostrarCodigoEstado() {
     var codigo = document.getElementById('codigo');
     codigo.innerHTML = peticion.status + "<br/>" + peticion.statusText;
   }
